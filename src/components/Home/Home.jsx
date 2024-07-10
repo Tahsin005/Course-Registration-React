@@ -5,6 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 
 // toast
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
     const [allCourse, setallCourse] = useState([]);
@@ -58,9 +59,7 @@ const Home = () => {
                 {/* sidebar */}
                 <div className="sm:col-span-12 md:col-span-5 lg:col-span-3">
                     <Sidebar selectedCourse={selectedCourse} remaining={remaining} totalCredit={totalCredit} totalPrice={totalPrice}></Sidebar>
-                    <div className="text-red-500 font-extrabold">
-                        <ToastContainer  className=" border-4 p-4 rounded-lg border-b-4"/>
-                    </div>
+                    
                 </div>
             </div>
         </div>
