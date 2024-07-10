@@ -1,25 +1,25 @@
 [
     {
         "id": 1,
-        "course_image": "https://i.ibb.co/SsRBZ9p/Rectangle-2-2.png",
-        "course_name": "Introduction to Programming",
-        "course_details": "Learn the fundamentals of programming in this  course.",
+        "course_image": "https://i.postimg.cc/Prv0gz9R/Rectangle-2-2.png",
+        "course_name": "Introduction to C Programming",
+        "course_details": "Introductory course on C programming covering basic syntax, data types, control structures, and functions.",
         "price": 4999,
         "credit": 3
     },
     {
         "id": 2,
-        "course_image": "https://i.ibb.co/9tVzFF6/Rectangle-2.png",
-        "course_name": "Introduction to OOP Python",
-        "course_details": "Become a web development pro with this comprehensive bootcamp.",
+        "course_image": "https://i.postimg.cc/MpvX24q8/Rectangle-2.png",
+        "course_name": "Introduction to OOP - All in one",
+        "course_details": "Introductory course on Object-Oriented Programming covering classes, objects, inheritance, and polymorphism.",
         "price": 19999,
         "credit": 5
     },
     {
         "id": 3,
-        "course_image": "https://i.ibb.co/c1TrMxT/Rectangle-2-1.png",
-        "course_name": "Database (MySQL)",
-        "course_details": "Explore the world of data science and analytics in this course.",
+        "course_image": "https://i.postimg.cc/gk0285w6/Rectangle-2-1.png",
+        "course_name": "Database (MySQL) - All in one",
+        "course_details": "Introductory course on MySQL covering basic database concepts, SQL queries, and database management.",
         "price": 7999,
         "credit": 4
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "course_image": "https://i.ibb.co/0nFnYyh/Rectangle-2-3.png",
         "course_name": "Introduction to Algorithms",
-        "course_details": "Master the basics of digital marketing and online advertising.",
+        "course_details": "Introductory course on algorithms covering fundamental concepts, design techniques, and analysis of algorithms.",
         "price": 5999,
         "credit": 3
     },
@@ -35,39 +35,39 @@
         "id": 5,
         "course_image": "https://i.ibb.co/5vSGk0C/Rectangle-2-4.png",
         "course_name": "Introduction to C++ for DSA",
-        "course_details": "Get started with graphic design and unleash your creativity.",
+        "course_details": "Introductory course on C++ covering basic syntax, object-oriented programming concepts, and standard library usage.",
         "price": 6999,
         "credit": 3
     },
     {
         "id": 6,
         "course_image": "https://i.ibb.co/vxSY7bn/Rectangle-2-5.png",
-        "course_name": "Software Engineering",
-        "course_details": "Dive into the exciting world of AI and machine learning.",
+        "course_name": "Software Engineering - All in one",
+        "course_details": "Introductory course on Software Engineering covering software development life cycles, methodologies, and best practices.",
         "price": 12999,
         "credit": 6
     },
     {
         "id": 7,
         "course_image": "https://i.ibb.co/Cn8JdJt/Rectangle-2-6.png",
-        "course_name": "Problem-Solving Part",
-        "course_details": "Develop ethical leadership skills for the modern business world.",
+        "course_name": "Problem-Solving - All in one",
+        "course_details": "Introductory course on problem solving focusing on analytical thinking, algorithmic strategies, and practical applications.",
         "price": 8999,
         "credit": 4
     },
     {
         "id": 8,
         "course_image": "https://i.ibb.co/m5Ln6g9/Rectangle-3.png",
-        "course_name": "Basic Data Structures",
-        "course_details": "Immerse yourself in the Spanish language and culture.",
+        "course_name": "Basic Data Structures - All in one",
+        "course_details": "Introductory course on basic data structures covering arrays, linked lists, stacks, graphs, trees and queues.",
         "price": 14999,
         "credit": 5
     },
     {
         "id": 9,
-        "course_image": "https://i.ibb.co/mFgpPCy/Rectangle-3-1.png",
-        "course_name": "AWS, Cloud Computing",
-        "course_details": "Relax and rejuvenate with our yoga and meditation retreat.",
+        "course_image": "https://i.postimg.cc/T1fqtG8x/Rectangle-3-1.png",
+        "course_name": "AWS, Cloud Computing - All in one",
+        "course_details": "Introductory course on AWS Cloud Hosting covering cloud fundamentals, AWS services, and deployment practices",
         "price": 7999,
         "credit": 2
     }
