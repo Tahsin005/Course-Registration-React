@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import "./Course.css";
-const Course = ({ course }) => {
+const Course = ({ course, handleSelectedCourse }) => {
   const { id, course_image, course_details, course_name, price, credit } =
     course;
   return (
@@ -23,7 +23,7 @@ const Course = ({ course }) => {
             <h2 className="text-md font-semibold">Credit: {credit}</h2>
         </div>
         <div className="card-actions justify-center mt-4">
-          <a className="bg-blue-600 text-white text-center hover:text-black hover:bg-white py-2 px-6 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg w-full block"
+          <a onClick={() => handleSelectedCourse(course)} className="bg-blue-600 text-white text-center hover:text-black hover:bg-white py-2 px-6 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg w-full block"
           >
             Select
           </a>
@@ -35,5 +35,6 @@ const Course = ({ course }) => {
 };
 Course.propTypes = {
   course: PropTypes.object.isRequired,
+  handleSelectedCourse: PropTypes.func.isRequired,
 };
 export default Course;
