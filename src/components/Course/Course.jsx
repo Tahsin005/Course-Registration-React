@@ -1,35 +1,35 @@
 import PropTypes from "prop-types";
-import './Course.css'
+import "./Course.css";
 const Course = ({ course }) => {
   const { id, course_image, course_details, course_name, price, credit } =
     course;
   return (
     <>
+      <div key={id} className="p-6 flex flex-col place-content-between shadow-xl rounded-md h-full">
       <div>
-        <div key={id} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-          <a href="#">
-            <img
-              className="rounded-t-lg w-full"
-              src={course_image}
-              alt=""/>
+        <img className="w-full" src={course_image} alt="course image" />
+      </div>
+      <div className="card-body">
+        <h2 className="text-start text-2xl font-bold my-3">{course_name}</h2>
+        
+        
+        <p className="text-sm text-start my-2">
+          {course_details}
+        </p>
+        <div className="info">
+            <h2 className="text-md font-semibold">
+            Price: <span>{price}</span>
+            </h2>
+            <h2 className="text-md font-semibold">Credit: {credit}</h2>
+        </div>
+        <div className="card-actions justify-center mt-4">
+          <a className="bg-blue-600 text-white text-center hover:text-black hover:bg-white py-2 px-6 rounded-lg text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg w-full block"
+          >
+            Select
           </a>
-          <div className="p-5">
-            <a href="#">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-start">
-                {course_name}
-              </h5>
-            </a>
-            <p className="mb-3 font-normal text-gray-900 text-start">
-              {course_details}
-            </p>
-            <div className="info my-3">
-              <p> $ Price :  {price} </p>
-              <p> ◧ Credit : {credit} </p>
-            </div>
-            <button className="bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-white w-full text-center p-2">Select</button>
-          </div>
         </div>
       </div>
+    </div>
     </>
   );
 };

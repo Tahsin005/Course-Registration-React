@@ -3,7 +3,7 @@
         "id": 1,
         "course_image": "https://i.postimg.cc/Prv0gz9R/Rectangle-2-2.png",
         "course_name": "Introduction to C Programming",
-        "course_details": "Introductory course on C programming covering basic syntax, data types, control structures, and functions.",
+        "course_details": "Introductory course on C programming covering basic syntax, data types, control structures, and functions, recursions, structures.",
         "price": 4999,
         "credit": 3
     },
@@ -42,8 +42,8 @@
     {
         "id": 6,
         "course_image": "https://i.ibb.co/vxSY7bn/Rectangle-2-5.png",
-        "course_name": "Software Engineering - All in one",
-        "course_details": "Introductory course on Software Engineering covering software development life cycles, methodologies, and best practices.",
+        "course_name": "Software Engineering",
+        "course_details": "Introductory course on Software Engineering covering software development life cycles, methodologies.",
         "price": 12999,
         "credit": 6
     },
@@ -58,15 +58,15 @@
     {
         "id": 8,
         "course_image": "https://i.ibb.co/m5Ln6g9/Rectangle-3.png",
-        "course_name": "Basic Data Structures - All in one",
-        "course_details": "Introductory course on basic data structures covering arrays, linked lists, stacks, graphs, trees and queues.",
+        "course_name": "Basic Data Structures",
+        "course_details": "Introductory course on basic data structures covering arrays, linked lists, stacks, graphs, trees, binary tree trees and queues.",
         "price": 14999,
         "credit": 5
     },
     {
         "id": 9,
         "course_image": "https://i.postimg.cc/T1fqtG8x/Rectangle-3-1.png",
-        "course_name": "AWS, Cloud Computing - All in one",
+        "course_name": "AWS, Cloud Computing",
         "course_details": "Introductory course on AWS Cloud Hosting covering cloud fundamentals, AWS services, and deployment practices",
         "price": 7999,
         "credit": 2
