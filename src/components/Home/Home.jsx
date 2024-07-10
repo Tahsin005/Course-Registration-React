@@ -3,6 +3,9 @@ import { useEffect } from "react";
 import Courses from "../Courses/Courses";
 import Sidebar from "../Sidebar/Sidebar";
 
+// toast
+import { ToastContainer, toast } from 'react-toastify';
+
 const Home = () => {
     const [allCourse, setallCourse] = useState([]);
     const [selectedCourse, setSelectedCourse] = useState([]);
@@ -24,7 +27,8 @@ const Home = () => {
         let price = course.price;
 
         if (isExist) {
-            alert('Course already taken');
+            toast("Already added this cours to the list.");
+
         } else {
             selectedCourse.forEach((item) => {
                 credit = credit + item.credit;
@@ -32,7 +36,7 @@ const Home = () => {
 
             const remaining = 20 - credit;
             if (credit > 20) {
-                alert('Credit limit exceeded');
+                toast('Credit limit exceeded');
             } else {
               setRemaining(remaining);
       
@@ -45,7 +49,7 @@ const Home = () => {
     };
     return (
         <div>
-            <div className="flex flex-col md:grid md:grid-cols-12 gap-4 mx-auto px-8 md:px-16 lg:px-24 py-5">
+            <div className="flex flex-col-reverse md:grid md:grid-cols-12 gap-4 mx-auto px-8 md:px-16 lg:px-24 py-5">
                 {/* cards */}
                 <div className="sm:col-span-12 md:col-span-7 lg:col-span-9">
                     <Courses handleSelectedCourse={handleSelectedCourse} courses={allCourse}></Courses>
@@ -54,6 +58,9 @@ const Home = () => {
                 {/* sidebar */}
                 <div className="sm:col-span-12 md:col-span-5 lg:col-span-3">
                     <Sidebar selectedCourse={selectedCourse} remaining={remaining} totalCredit={totalCredit} totalPrice={totalPrice}></Sidebar>
+                    <div className="text-red-500 font-extrabold">
+                        <ToastContainer  className=" border-4 p-4 rounded-lg border-b-4"/>
+                    </div>
                 </div>
             </div>
         </div>
