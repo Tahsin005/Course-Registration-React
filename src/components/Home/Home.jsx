@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import Courses from "../Courses/Courses";
 
 const Home = () => {
     const [allCourse, setallCourse] = useState([]);
@@ -14,11 +15,7 @@ const Home = () => {
             <div className="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5">
                 {/* cards */}
                 <div>
-                    {
-                        // allCourse.map((course, idx) => (
-
-                        // ))
-                    }
+                    <Courses courses={allCourse}></Courses>
                 </div>
 
                 {/* sidebar */}
