@@ -4,7 +4,7 @@ import Courses from "../Courses/Courses";
 import Sidebar from "../Sidebar/Sidebar";
 
 // toast
-import { ToastContainer, toast } from 'react-toastify';
+import { Bounce, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
@@ -28,7 +28,17 @@ const Home = () => {
         let price = course.price;
 
         if (isExist) {
-            toast("Already added this cours to the list.");
+            toast.warn('This course is already selected!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+                });
 
         } else {
             selectedCourse.forEach((item) => {
@@ -37,7 +47,17 @@ const Home = () => {
 
             const remaining = 20 - credit;
             if (credit > 20) {
-                toast('Credit limit exceeded');
+                toast.error('Credit Limit Exceeded!', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    transition: Bounce,
+                    });
             } else {
               setRemaining(remaining);
       
